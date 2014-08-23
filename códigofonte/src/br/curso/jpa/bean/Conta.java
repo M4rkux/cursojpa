@@ -1,4 +1,4 @@
-package br.curso.jpa.entities;
+package br.curso.jpa.bean;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

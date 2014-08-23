@@ -4,8 +4,8 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 
-import br.curso.jpa.DAOs.ContaDAO;
-import br.curso.jpa.entities.Conta;
+import br.curso.jpa.bean.Conta;
+import br.curso.jpa.dao.ContaDAO;
 import br.curso.jpa.utils.JPAUtil;
 
 

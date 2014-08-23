@@ -1,4 +1,4 @@
-package br.curso.jpa.DAOs;
+package br.curso.jpa.dao;
 
 import java.util.List;
 

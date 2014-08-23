@@ -1,10 +1,10 @@
-package br.curso.jpa.DAOs;
+package br.curso.jpa.dao;
 
 import java.util.List;
 
 import javax.persistence.EntityManager;
 
-import br.curso.jpa.entities.Conta;
+import br.curso.jpa.bean.Conta;
 
 public class ContaDAO {
 	private GenericDAO<Conta> dao;
