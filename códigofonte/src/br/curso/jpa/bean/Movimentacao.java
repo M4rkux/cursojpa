@@ -1,12 +1,15 @@
 package br.curso.jpa.bean;
 
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 
 import br.curso.jpa.enums.TipoMovimentacaoEnum;
@@ -27,6 +30,16 @@ public class Movimentacao {
 	@Enumerated (EnumType.STRING)
 	private TipoMovimentacaoEnum tipo;
 	
+	@ManyToMany
+	private List<Tag> tags = new ArrayList<Tag>();
+	
+	
+	public List<Tag> getTags() {
+		return tags;
+	}
+	public void setTags(List<Tag> tags) {
+		this.tags = tags;
+	}
 	
 	public Long getId() {
 		return id;
